@@ -4,12 +4,12 @@ import '../styles/App.css';
 class App extends Component {
     constructor(props){
         super(props)
-        this.relativeList ={
-            names: ["Sachin", "Yogesh", "Amit", "Anuj", "Pradeep", "Sunil", "Piyush", "Kamal", "Nihar", "Akhilesh"]
+        this.state ={
+            relativeList: ["Sachin", "Yogesh", "Amit", "Anuj", "Pradeep", "Sunil", "Piyush", "Kamal", "Nihar", "Akhilesh"]
         }
     }
     render() {
-         const person = this.relativeList.names.map((p)=>
+         const person = this.state.relativeList.map((p)=>
         <li key={"relativeList" + p.toString()}>{p}</li>
     )
         return(
