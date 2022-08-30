@@ -10,7 +10,7 @@ class App extends Component {
     }
     render() {
          const person = this.relativeList.names.map((p)=>
-        <li key={p.toString()}>{p}</li>
+        <li key={"relativeList" + p.toString()}>{p}</li>
     )
         return(
             <div id="main">
